@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 2px solid red;
+            margin: 3px 0;
+            background: cyan;
+            padding: 9px;
+            width: fit-content;
+        }
+        .bg-primary{
+            background-color: blueviolet;
+        }
+        .text-success{
+            color: white;
+        }
+        .but{
+            width: 100px;
+            height:50px;
+            font-size: 30px;
+        }
+        .table{
+            padding-top: 10px;
+        }
+        .res{
+            width:300px;
+            /* height: 50px; */
+            background-color: rgb(87, 226, 219);
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 30px;
+            height:40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <br><br>
+    <h1>Calculator</h1>
+    <div class="container">
+        <div class="res">
+            <p class="result" id="result"></p>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                  <td><button id="click" class="but" onclick="c7()">7</button></td>
+                  <td><button id="click" class="but" onclick="c8()">8</button></td>
+                  <th><button id="click" class="but" onclick="c9()">9</button></th>
+                </tr>
+                <tr>
+                  <td><button id="click" class="but" onclick="c4()">4</button></td>
+                  <td><button id="click" class="but" onclick="c5()">5</button></td>
+                  <td><button id="click" class="but" onclick="c6()">6</button></td>
+                </tr>
+                <tr>
+                  <td><button id="click" class="but" onclick="c1(1)">1</button></td>
+                  <td><button id="click" class="but" onclick="c2()">2</button></td>
+                  <td><button id="click" class="but" onclick="c3()">3</button></td>
+                </tr>
+                <tr>
+                    <td><button id="click" class="but" onclick="cp()">+</button></td>
+                    <td><button id="click" class="but" onclick="cs()">-</button></td>
+                    <td><button id="click" class="but" onclick="ce()">=</button></td>
+                  </tr>
+                  <tr>
+                    <td><button id="click" class="but" onclick="cm()">X</button></td>
+                    <td><button id="click" class="but" onclick="cd()">/</button></td>
+                    <td><button id="click" class="but" onclick="clear1()">C</button></td>
+                  </tr>
+              </table>
+        </div>   
+    </div>
+    <div id="firstContainer" class="container">
+        <button id="click" class="but" onclick="c()">9</button> 
+        <p>This is a paragraph which is the best para of this universe</p>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+    <script src="calc.js"></script>
+</center>
+</body>
+
+</html>
